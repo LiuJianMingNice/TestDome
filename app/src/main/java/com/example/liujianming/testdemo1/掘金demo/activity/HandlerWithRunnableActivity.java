@@ -26,7 +26,7 @@ public class HandlerWithRunnableActivity extends AppCompatActivity implements Vi
             switch (msg.what) {
                 case 1:
                     Log.d(TAG, "Runnable thread id = " + Thread.currentThread().getId());
-                    HandlerWithRunnableActivity.this.statusTextView.setText("文件下载完成!!!!!");
+                    HandlerWithRunnableActivity.this.statusTextView.setText("文件下载完成!!!!!!");
                     break;
             }
         }
