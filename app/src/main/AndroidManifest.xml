@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.liujianming.testdemo1">
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".audioandvideo.activity.CameraActivity"></activity>
+        <activity android:name=".audioandvideo.activity.Dome1Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".android.activity.ListTitlesActivity" />
+        <activity android:name=".android.activity.ContentActivity" />
+        <activity android:name=".android.activity.TestFragment1Activity" />
+        <activity android:name=".android.activity.PassWordEditTextActivity" />
+        <activity android:name=".android.activity.RecyclerViewActivity"></activity>
+        <activity android:name=".android.activity.MyPointViewActivity" />
+        <activity android:name=".android.activity.CustomViewActivity" />
+        <activity android:name=".android.activity.ProviderActivity" />
+        <activity android:name=".android.activity.BookManagerActivity" />
+        <activity android:name=".android.activity.AIDLServiceActivity" />
+        <activity android:name=".android.activity.MessengerActivity" />
+        <activity android:name=".掘金demo.activity.HandlerWithRunnableActivity" />
+        <activity android:name=".简书Demo.activity.IdentifyWordsActivity" />
+        <activity android:name=".简书Demo.activity.TestDrawingBoardActivity" />
+        <activity android:name=".arouter.activity.TwoActivity" />
+        <activity android:name=".arouter.activity.OneActivity" />
+        <activity android:name=".简书Demo.activity.TestUnlockNineSquaresViewActivity" />
+        <activity android:name=".简书Demo.activity.TestRadarViewActivity" />
+        <activity android:name=".贝塞尔曲线.activity.TestBezierActivity" />
+        <activity android:name=".贝塞尔曲线.activity.TestActivity" />
+        <activity android:name=".test.activity.HandlerTestActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".test.activity.ImageLoaderActivity" />
+        <activity android:name=".test.architect.thread.TestAsyncTaskActivity" />
+        <activity android:name=".test.activity.StrictModelTestActivity" />
+        <activity android:name=".test.activity.JobServiceTestActivity" />
+        <activity android:name=".test.activity.TestScreenActivity" />
+
+        <provider
+            android:name=".android.provider.BookProvider"
+            android:authorities="com.example.liujianming.testdemo1"
+            android:process=":provider" />
+
+        <service
+            android:name=".test.service.MyJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".android.service.MessengerService"
+            android:process=":remote" />
+        <service
+            android:name=".android.service.AIDLService"
+            android:process=":remote" />
+        <service
+            android:name=".android.service.BookManagerService"
+            android:process=":remote1" />
+    </application>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+</manifest>

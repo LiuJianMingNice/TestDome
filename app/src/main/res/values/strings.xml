@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TestDemo</string>
+
+    <string name="recyclerview_item1">开关1</string>
+    <string name="recyclerview_item2">开关2</string>
+    <string name="recyclerview_item3">跳转到Fragment1</string>
+    <string name="recyclerview_item4">跳转到Fragment2</string>
+    <string name="recyclerview_item5">跳转到Fragment3</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
