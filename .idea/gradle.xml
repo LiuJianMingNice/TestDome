@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/DevelopAndArt" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/audioandvideo" />
+            <option value="$PROJECT_DIR$/csdnprojection" />
+            <option value="$PROJECT_DIR$/javaprogrammingideas" />
+            <option value="$PROJECT_DIR$/jetpacktest" />
+            <option value="$PROJECT_DIR$/jianshuprojection" />
+            <option value="$PROJECT_DIR$/kotlindome1" />
+            <option value="$PROJECT_DIR$/kotlinprojection" />
+            <option value="$PROJECT_DIR$/liuwangshu" />
+            <option value="$PROJECT_DIR$/mykotlintest" />
+            <option value="$PROJECT_DIR$/openglproject" />
+            <option value="$PROJECT_DIR$/pdfhelper" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,12 @@
+/*include ':ocr_ui'*/
+include ':mykotlintest'
+include ':kotlinprojection'
+include ':liuwangshu'
+include ':javaprogrammingideas'
+include ':jianshuprojection'
+include ':DevelopAndArt'
+include ':csdnprojection'
+include ':app', ':audioandvideo', ':openglproject'
+include ':kotlindome1'
+include ':pdfhelper'
+include ':jetpacktest'

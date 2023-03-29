@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".activity.FileOperationActivity">
+
+    <Button
+        android:id="@+id/btn_read_raw_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doReadRawFile"
+        android:text="读取Raw目录里的文件" />
+
+    <Button
+        android:id="@+id/btn_read_assets_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doReadAssetsFile"
+        android:text="读取Assets目录里的文件" />
+
+    <Button
+        android:id="@+id/btn_write_app_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doWriteAppFile"
+        android:text="写入应用Files目录里的文件" />
+
+    <Button
+        android:id="@+id/btn_read_app_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doReadAppFile"
+        android:text="读取应用Files目录里的文件" />
+
+    <Button
+        android:id="@+id/btn_write_sdcard_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doWriteSDCardFile"
+        android:text="写入SDCARD上的文件" />
+    <Button
+        android:id="@+id/btn_read_sdcard_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doReadSDCardFile"
+        android:text="读取SDCARD上的文件" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+        <TextView
+            android:id="@+id/tvFileContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ScrollView>
+
+
+</LinearLayout>

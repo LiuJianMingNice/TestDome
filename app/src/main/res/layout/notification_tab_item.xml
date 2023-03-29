@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="data"
+            type="com.example.liujianming.testdemo1.android.viewmodel.NotificationTabItemViewModel" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_event"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:minWidth="70dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="4dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:background="@{data.observeSelected ? @drawable/shape_notification_btn_sel_bg : @drawable/shape_notification_btn_bg}"
+            android:gravity="center"
+            android:text="@{data.observeTypeName}"
+            textColor="@{data.observeSelected ? @color/white : @color/item_text_color}"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_event_count"
+            android:layout_width="20dp"
+            android:layout_height="14dp"
+            android:background="@drawable/shape_red_fullround"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:maxWidth="25dp"
+            android:minWidth="14dp"
+            android:text="@{String.valueOf(data.observeCount)}"
+            android:textColor="@color/white"
+            android:visibility="@{data.observeCount == 0? View.GONE : View.VISIBLE}"
+            app:autoSizeMinTextSize="8sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

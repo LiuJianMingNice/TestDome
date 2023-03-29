@@ -9,14 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.NestedLinearLayoutActivity"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.FileOperationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.MoveImageByKeyActivity">
+
+        </activity>
+        <activity android:name=".activity.DynamicLineChartActivity" />
+        <activity android:name=".activity.LineChartActivity" />
+        <activity android:name=".activity.BarChartActivity" />
+        <activity android:name=".activity.PieChartActivity" />
+        <activity android:name=".activity.MPAndroidChartActivity">
+        </activity>
+        <activity android:name=".activity.ParseJsonActivity" />
+        <activity android:name=".activity.ExpressionCalculatorActivity" />
+        <activity android:name=".activity.BouncingBallActivity" />
+        <activity android:name=".activity.PoemContentActivity" />
+        <activity android:name=".activity.PoemListActivity" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

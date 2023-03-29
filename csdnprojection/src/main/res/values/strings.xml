@@ -1,3 +1,46 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">LJM_APP</string>
+
+    <string-array name="titles">
+        <item>静夜思</item>
+        <item>登鹳雀楼</item>
+        <item>相思</item>
+        <item>听弹琴</item>
+        <item>登乐游原</item>
+        <item>朝发白帝城</item>
+        <item>巴山夜雨</item>
+        <item>渭城曲</item>
+        <item>春夜喜雨</item>
+        <item>离离原上草</item>
+        <item>示儿</item>
+    </string-array>
+
+    <string-array name="authors">
+        <item>唐·李白</item>
+        <item>唐·王之涣</item>
+        <item>唐·王维</item>
+        <item>唐·刘长卿</item>
+        <item>唐·李商隐</item>
+        <item>唐·李白</item>
+        <item>唐·杜牧</item>
+        <item>唐·王维</item>
+        <item>唐·杜甫</item>
+        <item>唐·白居易</item>
+        <item>宋·陆游</item>
+    </string-array>
+
+    <string-array name="contents">
+        <item>床前明月光，\n疑是地上霜。\n举头望明月，\n低头思故乡。</item>
+        <item>白日依山尽，\n黄河入海流。\n欲穷千里目，\n更上一层楼。</item>
+        <item>红豆生南国，\n春来发几枝。\n愿君多采撷，\n此物最相思。</item>
+        <item>泠泠七弦上，\n静听松风寒。\n古调虽自爱，\n今人多不弹。</item>
+        <item>向晚意不适，\n驱车登古原。\n夕阳无限好，\n只是近黄昏。</item>
+        <item>朝辞白帝彩云间，\n千里江陵一日还。\n两岸猿声啼不住，\n轻舟已过万重山。</item>
+        <item>君问归期未有期，\n巴山夜雨涨秋池。\n何当共剪西窗烛，\n却话巴山夜雨时。</item>
+        <item>渭城朝雨浥轻尘，\n客舍青青柳色新。\n劝君更尽一杯酒，\n西出阳关无故人。</item>
+        <item>好雨知时节，当春乃发生。\n随风潜入夜，润物细无声。\n野径云俱黑，江船火独明。\n晓看红湿处，花重锦官城。</item>
+        <item>离离原上草，一岁一枯荣。\n野火烧不尽，春风吹又生。\n远芳侵古道，晴翠接荒城。\n又送王孙去，萋萋满别情。</item>
+        <item>死去元知万事空，\n但悲不见九州同。\n王师北定中原日，\n家祭无忘告乃翁。 </item>
+    </string-array>
+
 </resources>

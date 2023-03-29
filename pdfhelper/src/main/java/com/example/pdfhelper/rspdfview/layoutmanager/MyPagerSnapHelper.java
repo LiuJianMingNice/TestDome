@@ -2,6 +2,7 @@ package com.example.pdfhelper.rspdfview.layoutmanager;
 
 import android.graphics.PointF;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.View;
 
 import com.example.pdfhelper.rspdfview.utils.RSReflectUtils;
@@ -47,6 +48,9 @@ public class MyPagerSnapHelper extends SnapHelper {
             out[1] = 0;
         }
 
+        Log.d("ljm","out0==>>> " + out[0]);
+        Log.d("ljm","out1==>>> " + out[1]);
+
         return out;
     }
 
@@ -62,6 +66,7 @@ public class MyPagerSnapHelper extends SnapHelper {
 
     @Override
     public int findTargetSnapPosition(RecyclerView.LayoutManager layoutManager, int velocityX, int velocityY) {
+        Log.d("ljm", "findTargetSnapPosition");
         int itemCount = layoutManager.getItemCount();
         if (itemCount == 0) {
             return -1;

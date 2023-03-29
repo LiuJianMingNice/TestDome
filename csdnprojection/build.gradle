@@ -30,4 +30,8 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
+    implementation 'org.apache.httpcomponents:httpcore:4.4.4'
+    implementation files('libs/MPAndroidChart-v2.1.5.jar')
+    implementation files('libs/mockito-core-1.9.5.jar')
+
 }

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".android.activity.SegmentedControlActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="13sp"
+        android:textColor="@color/red"
+        android:text="SegMode ==>> default"/>
+
+    <com.example.liujianming.testdemo1.android.customview.SegmentedControlView
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        app:segItemHorizontalMargin="3dp"
+        app:segItemVerticalMargin="3dp"
+        android:id="@+id/scv1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="13sp"
+        android:textColor="@color/red"
+        android:text="SegMode ==>> Circle, segSelectedItem ==>> 1"/>
+
+    <com.example.liujianming.testdemo1.android.customview.SegmentedControlView
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        app:segItemHorizontalMargin="3dp"
+        app:segItemVerticalMargin="3dp"
+        app:segCornersMode="Circle"
+        app:segSelectedItem="1"
+        android:id="@+id/scv2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="13sp"
+        android:textColor="@color/red"
+        android:text="SegMode ==>> default,SegScrollEnable ==>> false"/>
+
+    <com.example.liujianming.testdemo1.android.customview.SegmentedControlView
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        app:segItemHorizontalMargin="3dp"
+        app:segItemVerticalMargin="3dp"
+        app:segScrollSelectEnabled="false"
+        android:id="@+id/scv3"/>
+
+</LinearLayout>

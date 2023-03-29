@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kotlinprojection">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".wanandroid.ui.activity.SearchActivity"
+            android:exported="false"
+            android:label="@string/title_activity_search"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".wanandroid.ui.activity.ProjectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".wanandroid.ui.activity.OfficialCodeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".wanandroid.ui.activity.ShopDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".wanandroid.ui.activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wanandroid.ui.activity.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".wanandroid.ui.activity.CustomerDialogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".wanandroid.ui.activity.CollectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".wanandroid.ui.activity.MainWebActivity"
+            android:exported="false" />
+        <activity
+            android:name=".wanandroid.ui.activity.ArticalSystemListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".wanandroid.ui.activity.ArticalSystemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".wanandroid.ui.activity.AboutUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".wanandroid.base.BaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".kotlinDemo.activity.AuctionClientActivity"
+            android:exported="false" />
+        <activity
+            android:name=".kotlinDemo.activity.LoginActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".kotlinTest.activity.GPSTestActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".kotlinTest.activity.RendererTestActivity"
+            android:exported="true">
+
+            <!-- 指定快捷方式的资源文件 -->
+            <!-- <meta-data android:name="android.app.shortcuts" -->
+            <!-- android:resource="@xml/fk_shortcuts" /> -->
+        </activity>
+        <activity
+            android:name=".kotlinTest.activity.BroadcastReceiverTestActivity"
+            android:exported="true" />
+        <activity
+            android:name=".kotlinTest.activity.ServiceTestActivity"
+            android:exported="true" />
+        <activity android:name=".kotlinTest.activity.TestActivity" />
+        <activity android:name=".kotlinTest.activity.EditTextActivity" />
+        <activity android:name=".kotlinTest.activity.SearchViewTestActivity" />
+        <activity android:name=".kotlinTest.activity.ProgressActivity" />
+        <activity android:name=".kotlinTest.activity.ImageTest01Activity" />
+        <activity android:name=".kotlinTest.activity.ImageTestActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".kotlinTest.activity.CodeViewActivity" />
+
+        <receiver
+            android:name=".kotlinTest.receiver.MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.kotlinprojection.kotlinTest.receiver.action.CRAZY_BROADCAST" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".kotlinTest.service.BindService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".kotlinTest.service.FirstService"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

@@ -33,6 +33,7 @@ public class RSScaleImageView extends AppCompatImageView implements IPDFControl 
 
     private RSScaleImageView.MatrixTouchListener mListener;
     protected List<IPDFOperateListener> mListeners;
+    private boolean isScrollDistance = true;
 
     private static final int FLING_MIN_DISTANCE = 50;
     private static final int FLING_MIN_VELOCITY = 0;
@@ -170,37 +171,41 @@ public class RSScaleImageView extends AppCompatImageView implements IPDFControl 
 
         @Override
         public boolean onTouch(View v, MotionEvent event) {
-            // TODO Auto-generated method stub
-            switch (event.getActionMasked()) {
-                case MotionEvent.ACTION_DOWN:
-                    //设置拖动模式
-                    mMode = MODE_DRAG;
-                    startPoint.set(event.getX(), event.getY());
-                    isMatrixEnable();
-                    break;
-                case MotionEvent.ACTION_UP:
-                case MotionEvent.ACTION_CANCEL:
-                    reSetMatrix();
-                    break;
-                case MotionEvent.ACTION_MOVE:
-                    if (mMode == MODE_ZOOM) {
-                        setZoomMatrix(event);
-                    } else if (mMode == MODE_DRAG) {
-                        setDragMatrix(event);
-                    }
-                    break;
-                case MotionEvent.ACTION_POINTER_DOWN:
-                    if (mMode == MODE_UNABLE) {
-                        return true;
-                    }
-                    mMode = MODE_ZOOM;
-                    mStartDis = distance(event);
-                    break;
-                default:
-                    break;
-            }
 
-            return mGestureDetector.onTouchEvent(event);
+            if (isScrollDistance) {
+                return false;
+            } else {
+                // TODO Auto-generated method stub
+                switch (event.getActionMasked()) {
+                    case MotionEvent.ACTION_DOWN:
+                        //设置拖动模式
+                        mMode = MODE_DRAG;
+                        startPoint.set(event.getX(), event.getY());
+                        isMatrixEnable();
+                        break;
+                    case MotionEvent.ACTION_UP:
+                    case MotionEvent.ACTION_CANCEL:
+                        reSetMatrix();
+                        break;
+                    case MotionEvent.ACTION_MOVE:
+                        if (mMode == MODE_ZOOM) {
+                            setZoomMatrix(event);
+                        } else if (mMode == MODE_DRAG) {
+                            setDragMatrix(event);
+                        }
+                        break;
+                    case MotionEvent.ACTION_POINTER_DOWN:
+                        if (mMode == MODE_UNABLE) {
+                            return true;
+                        }
+                        mMode = MODE_ZOOM;
+                        mStartDis = distance(event);
+                        break;
+                    default:
+                        break;
+                }
+                return mGestureDetector.onTouchEvent(event);
+            }
         }
 
         public void setDragMatrix(MotionEvent event) {
@@ -427,17 +432,17 @@ public class RSScaleImageView extends AppCompatImageView implements IPDFControl 
                                float velocityY) {
             // TODO Auto-generated method stub
 
-            if (e1.getY()-e2.getY() > FLING_MIN_DISTANCE
-                    && Math.abs(velocityX) > FLING_MIN_VELOCITY) {
-                // Fling left
-                Log.d("ljm", "向上手势");
-                nextPage();
-            } else if (e2.getY()-e1.getY() > FLING_MIN_DISTANCE
-                    && Math.abs(velocityX) > FLING_MIN_VELOCITY) {
-                // Fling right
-                Log.d("ljm", "向下手势");
-                previousPage();
-            }
+//            if (e1.getY()-e2.getY() > FLING_MIN_DISTANCE
+//                    && Math.abs(velocityX) > FLING_MIN_VELOCITY) {
+//                // Fling left
+//                Log.d("ljm", "向上手势");
+//                nextPage();
+//            } else if (e2.getY()-e1.getY() > FLING_MIN_DISTANCE
+//                    && Math.abs(velocityX) > FLING_MIN_VELOCITY) {
+//                // Fling right
+//                Log.d("ljm", "向下手势");
+//                previousPage();
+//            }
 
             return super.onFling(e1, e2, velocityX, velocityY);
         }

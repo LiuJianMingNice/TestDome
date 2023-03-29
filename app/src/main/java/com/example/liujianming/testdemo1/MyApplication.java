@@ -4,6 +4,7 @@ import android.app.Application;
 import android.graphics.Bitmap;
 
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.example.liujianming.testdemo1.掘金demo.observers.MyLifecycleObserver;
 import com.nostra13.universalimageloader.cache.disc.impl.UnlimitedDiskCache;
 import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
 import com.nostra13.universalimageloader.cache.memory.impl.UsingFreqLimitedMemoryCache;
@@ -19,6 +20,8 @@ import com.yc.toollib.crash.CrashToolUtils;
 
 import java.io.File;
 
+import androidx.lifecycle.ProcessLifecycleOwner;
+
 public class MyApplication extends Application {
 
     @Override
@@ -26,6 +29,7 @@ public class MyApplication extends Application {
         super.onCreate();
         initLoader();
         ARouter.init(this);
+        listenerForegroundOrBackground();
     }
 
     public void initLoader() {
@@ -70,5 +74,9 @@ public class MyApplication extends Application {
 
             }
         });
+    }
+
+    private void listenerForegroundOrBackground() {
+        ProcessLifecycleOwner.get().getLifecycle().addObserver(new MyLifecycleObserver());
     }
 }

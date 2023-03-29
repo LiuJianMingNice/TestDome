@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <shortcut-->
+<!--        android:enable="true"-->
+<!--        android:icon="@drawable/ic_launcher_background"-->
+<!--        android:shortcutDisableMessage="不可点信息"-->
+<!--        android:shortcutId="fk_shortcut"-->
+<!--        android:shortcutLongLabel="Long Label"-->
+<!--        android:shortcutShortLabel="Short Label">-->
+<!--        <intent-->
+<!--            android:action="android.intent.action.VIEW"-->
+<!--            android:targetClass=""-->
+<!--            android:targetPackage=""/>-->
+<!--    </shortcut>-->
+</shortcuts>
